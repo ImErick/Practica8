@@ -42,4 +42,6 @@ public class SharedPreferenceMethod {
         editor.clear();
         return editor.commit();
     }
+
+
 }

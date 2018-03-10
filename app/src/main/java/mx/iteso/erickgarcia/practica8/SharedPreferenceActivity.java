@@ -47,5 +47,16 @@ public class SharedPreferenceActivity extends AppCompatActivity{
                 startActivity(intent);
             }
         });
+
+        imageButtonList.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FragmentManager fragmentManager = getFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                Fragment fragment = new FragmentListUser();
+                fragmentTransaction.add(R.id.main_frameLayout, fragment);
+                fragmentTransaction.commit();
+            }
+        });
     }
 }
