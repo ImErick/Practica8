@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Practica8</string>
+    <string name="txt_main">PERSISTENCIA DE DATOS</string>
+    <string name="btn_main">Shared Preference</string>
+</resources>
