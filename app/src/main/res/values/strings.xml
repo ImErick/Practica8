@@ -2,4 +2,8 @@
     <string name="app_name">Practica8</string>
     <string name="txt_main">PERSISTENCIA DE DATOS</string>
     <string name="btn_main">Shared Preference</string>
+    <string name="hint_name">Nombre</string>
+    <string name="hint_phone">Telefono</string>
+    <string name="btn_fragment_add">guardar contacto</string>
+    <string name="header_fragment_add">Ingrese la informacion solicitada</string>
 </resources>
