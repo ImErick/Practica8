@@ -5,7 +5,7 @@
     android:orientation="vertical">
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textViewFragmentHeader"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/header_fragment_add"
@@ -29,6 +29,7 @@
         android:hint="@string/hint_phone"/>
 
     <Button
+        android:id="@+id/btnSaveContact"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/btn_fragment_add"
