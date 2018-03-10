@@ -35,4 +35,11 @@ public class SharedPreferenceMethod {
         }
         return saved;
     }
+
+    public boolean cleanAllSharedPreferences(String keyShared) {
+        sharedPreferences = activity.getSharedPreferences(keyShared, Context.MODE_PRIVATE);
+        editor = sharedPreferences.edit();
+        editor.clear();
+        return editor.commit();
+    }
 }
