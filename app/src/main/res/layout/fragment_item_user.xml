@@ -6,7 +6,7 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/textViewName"
+        android:id="@+id/lbl_textViewName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
@@ -18,15 +18,16 @@
         android:text="Nombre" />
 
     <TextView
-        android:id="@+id/textViewPhone"
+        android:id="@+id/lbl_textViewPhone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textViewName"
-        android:layout_alignStart="@+id/textViewName"
-        android:layout_below="@+id/textViewName"
+        android:layout_alignLeft="@+id/lbl_textViewName"
+        android:layout_alignStart="@+id/lbl_textViewName"
+        android:layout_below="@+id/lbl_textViewName"
         android:layout_marginTop="14dp"
         android:text="Telefono" />
 
+    <!-- Asi por mientras
     <ImageButton
         android:id="@+id/imageButtonDeleteUser"
         android:layout_width="wrap_content"
@@ -36,5 +37,5 @@
         android:layout_below="@+id/textViewPhone"
         android:layout_marginEnd="15dp"
         android:layout_marginRight="15dp"
-        app:srcCompat="@android:drawable/ic_menu_delete" />
+        app:srcCompat="@android:drawable/ic_menu_delete" /> -->
 </RelativeLayout>

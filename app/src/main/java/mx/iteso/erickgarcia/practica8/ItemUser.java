@@ -8,10 +8,10 @@ public class ItemUser {
     String name, phone;
     int delete_user;
 
-    public ItemUser(String name, String phone, int delete_user) {
+    public ItemUser(String name, String phone) {
         this.name = name;
         this.phone = phone;
-        this.delete_user = delete_user;
+        //this.delete_user = delete_user;
     }
 
     public String getName() {

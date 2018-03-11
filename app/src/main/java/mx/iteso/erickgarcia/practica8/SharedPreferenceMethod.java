@@ -43,5 +43,8 @@ public class SharedPreferenceMethod {
         return editor.commit();
     }
 
-
+    public Map<String, ?> getAllUsers(String keyShared) {
+        sharedPreferences = activity.getSharedPreferences(keyShared, Context.MODE_PRIVATE);
+        return sharedPreferences.getAll();
+    }
 }
