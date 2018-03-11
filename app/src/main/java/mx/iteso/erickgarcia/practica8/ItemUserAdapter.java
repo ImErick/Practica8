@@ -47,9 +47,11 @@ public class ItemUserAdapter extends ArrayAdapter<ItemUser>{
         delete_user.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (new SharedPreferenceMethod(activity).delKey("user", itemUserList.get(position).getName()))
+                if (new SharedPreferenceMethod(activity).delKey("user", itemUserList.get(position).getName())) {
                     Toast.makeText(activity, "user deleted", Toast.LENGTH_SHORT).show();
-                else
+                    itemUserList.remove(itemUserList.get(position));
+                    notifyDataSetChanged();
+                } else
                     Toast.makeText(activity, "unable to delete user", Toast.LENGTH_SHORT).show();
             }
         });
