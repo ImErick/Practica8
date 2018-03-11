@@ -33,7 +33,7 @@ public class SharedPreferenceActivity extends AppCompatActivity{
                 FragmentManager fragmentManager = getFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
                 Fragment fragment = new FragmentAddUser();
-                fragmentTransaction.add(R.id.main_frameLayout, fragment);
+                fragmentTransaction.replace(R.id.main_frameLayout, fragment);
                 fragmentTransaction.commit();
             }
         });
@@ -54,7 +54,7 @@ public class SharedPreferenceActivity extends AppCompatActivity{
                 FragmentManager fragmentManager = getFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
                 Fragment fragment = new FragmentListUser();
-                fragmentTransaction.add(R.id.main_frameLayout, fragment);
+                fragmentTransaction.replace(R.id.main_frameLayout, fragment);
                 fragmentTransaction.commit();
             }
         });
