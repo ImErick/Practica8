@@ -30,8 +30,6 @@ public class FragmentListUser extends Fragment {
         ArrayList<ItemUser> itemUserArrayList = new ArrayList<>();
         ItemUserAdapter itemUserAdapter;
 
-
-        //TODO: primero que muestre los usuarios luego vemos como se eliminan ALV ImageButton imageButtonDeleterUser = view.findViewById(R.id.imageButtonDeleteUser);
         Map<String, ?> allUsers = new SharedPreferenceMethod(getActivity()).getAllUsers("user");
         if (!allUsers.isEmpty()) {
             for (Map.Entry<String, ?> entry: allUsers.entrySet()) {
@@ -39,6 +37,7 @@ public class FragmentListUser extends Fragment {
                 itemUser = new ItemUser(entry.getKey(), entry.getValue().toString());
                 itemUserArrayList.add(itemUser);
                 itemUserAdapter = new ItemUserAdapter(getActivity(), 0, itemUserArrayList);
+                listView.setAdapter(itemUserAdapter);
             }
         } else {
             Log.d("empty list", "no hay usuarios para mostrar!");

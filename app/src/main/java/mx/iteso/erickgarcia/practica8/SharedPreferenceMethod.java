@@ -47,4 +47,24 @@ public class SharedPreferenceMethod {
         sharedPreferences = activity.getSharedPreferences(keyShared, Context.MODE_PRIVATE);
         return sharedPreferences.getAll();
     }
+
+    public String getValue(String keyShared, String key) {
+        sharedPreferences = activity.getSharedPreferences(keyShared, Context.MODE_PRIVATE);
+        return sharedPreferences.getString(key, "the value does not exist");
+    }
+
+    public boolean delKey(String keyShared, String key){
+        boolean existe = true;
+        sharedPreferences = activity.getSharedPreferences(keyShared, Context.MODE_PRIVATE);
+
+        if (getValue(keyShared, key).equals("the value does not exist"))
+            existe = false;
+        else {
+            editor = sharedPreferences.edit();
+            editor.remove(key);
+            editor.commit();
+            existe = true;
+        }
+        return existe;
+    }
 }
