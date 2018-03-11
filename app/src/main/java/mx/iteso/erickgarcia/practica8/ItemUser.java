@@ -11,7 +11,6 @@ public class ItemUser {
     public ItemUser(String name, String phone) {
         this.name = name;
         this.phone = phone;
-        //this.delete_user = delete_user;
     }
 
     public String getName() {
@@ -28,13 +27,5 @@ public class ItemUser {
 
     public void setPhone(String phone) {
         this.phone = phone;
-    }
-
-    public int getDelete_user() {
-        return delete_user;
-    }
-
-    public void setDelete_user(int delete_user) {
-        this.delete_user = delete_user;
     }
 }

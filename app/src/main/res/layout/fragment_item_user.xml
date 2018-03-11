@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/fragmentItemListView"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -15,7 +14,8 @@
         android:layout_marginLeft="21dp"
         android:layout_marginStart="21dp"
         android:layout_marginTop="16dp"
-        android:text="Nombre" />
+        android:textStyle="bold"
+        android:text="" />
 
     <TextView
         android:id="@+id/lbl_textViewPhone"
@@ -25,7 +25,7 @@
         android:layout_alignStart="@+id/lbl_textViewName"
         android:layout_below="@+id/lbl_textViewName"
         android:layout_marginTop="14dp"
-        android:text="Telefono" />
+        android:text="" />
 
     <ImageButton
         android:id="@+id/imageButtonDeleteUser"
@@ -36,5 +36,6 @@
         android:layout_below="@+id/lbl_textViewPhone"
         android:layout_marginEnd="15dp"
         android:layout_marginRight="15dp"
-        app:srcCompat="@android:drawable/ic_menu_delete" />
+        android:background="@color/colorLetra"
+        app:srcCompat="@android:drawable/ic_delete" />
 </RelativeLayout>
