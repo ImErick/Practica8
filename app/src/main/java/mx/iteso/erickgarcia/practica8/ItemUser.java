@@ -5,8 +5,7 @@ package mx.iteso.erickgarcia.practica8;
  */
 
 public class ItemUser {
-    String name, phone;
-    int delete_user;
+    private String name, phone;
 
     public ItemUser(String name, String phone) {
         this.name = name;

@@ -17,8 +17,8 @@ import java.util.HashMap;
  */
 
 public class FragmentAddUser extends Fragment {
-    EditText editTextName, editTextPhone;
-    Button buttonSaveContact;
+    private EditText editTextName, editTextPhone;
+    private Button buttonSaveContact;
 
     @Nullable
     @Override

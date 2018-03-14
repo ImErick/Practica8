@@ -18,7 +18,7 @@ import java.util.Map;
  */
 
 public class FragmentListUser extends Fragment {
-    ListView listView;
+    private ListView listView;
 
     @Nullable
     @Override

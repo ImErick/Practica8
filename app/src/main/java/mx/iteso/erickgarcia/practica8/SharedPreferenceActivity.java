@@ -16,7 +16,7 @@ import android.widget.Toast;
  */
 
 public class SharedPreferenceActivity extends AppCompatActivity{
-    ImageButton imageButtonList, imageButtonAdd, imageButtonDeleteAll;
+    private ImageButton imageButtonList, imageButtonAdd, imageButtonDeleteAll;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
